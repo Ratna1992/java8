@@ -1,4 +1,4 @@
-package com.ratna.play.customkey;
+package com.ratna.play.collections;
 
 import java.util.HashMap;
 import java.util.Map;
