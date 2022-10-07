@@ -38,7 +38,7 @@ public class FlatMapMethodExample {
 
 		Stream<int[]> streamOfIntArray = Stream.of(integers);
 
-		int sum = streamOfIntArray.flatMapToInt(x -> Arrays.stream(x)).sum();
+		int sum = streamOfIntArray.flatMapToInt(Arrays::stream).sum();
 
 		System.out.println(sum);
 	}
