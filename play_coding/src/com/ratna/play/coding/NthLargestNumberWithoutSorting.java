@@ -1,6 +1,6 @@
 package com.ratna.play.coding;
 
-public class NthLargestNumberWithSorting {
+public class NthLargestNumberWithoutSorting {
 
 	public static void main(String[] args) {
 
