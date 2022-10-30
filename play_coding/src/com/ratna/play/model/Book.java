@@ -1,6 +1,6 @@
 package com.ratna.play.model;
 
-public class Book {
+public final class Book {
 	private String title;
 	private String author;
 

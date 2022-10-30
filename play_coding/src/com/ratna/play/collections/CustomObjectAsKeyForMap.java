@@ -24,6 +24,8 @@ public class CustomObjectAsKeyForMap {
 		Book key = new Book("Java", "James Gosling");
 
 		System.out.println("Is key: " + key + " available? " + bookMap.containsKey(key));
+
+		System.out.println(bookMap.get(key));
 	}
 
 }
