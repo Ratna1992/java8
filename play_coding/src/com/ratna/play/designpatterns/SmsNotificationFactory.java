@@ -1,5 +1,6 @@
 package com.ratna.play.designpatterns;
 
+//factory design pattern
 public class SmsNotificationFactory implements NotificationFactory {
 
 	@Override
