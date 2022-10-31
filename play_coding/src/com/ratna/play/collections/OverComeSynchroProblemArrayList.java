@@ -1,6 +1,7 @@
 package com.ratna.play.collections;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class OverComeSynchroProblemArrayList implements Runnable {
@@ -26,7 +27,8 @@ public class OverComeSynchroProblemArrayList implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		List<Integer> numList = new ArrayList<Integer>();
+		List<Integer> numList = Collections.synchronizedList(new ArrayList<Integer>());
+	
 		// Creating three threads
 		Thread t1 = new Thread(new OverComeSynchroProblemArrayList(numList));
 		Thread t2 = new Thread(new OverComeSynchroProblemArrayList(numList));

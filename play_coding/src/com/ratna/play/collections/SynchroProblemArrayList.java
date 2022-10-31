@@ -27,7 +27,7 @@ public class SynchroProblemArrayList implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		List<Integer> numList = Collections.synchronizedList(new ArrayList<Integer>());
+		List<Integer> numList = new ArrayList<Integer>();
 		// Creating three threads
 		Thread t1 = new Thread(new SynchroProblemArrayList(numList));
 		Thread t2 = new Thread(new SynchroProblemArrayList(numList));
