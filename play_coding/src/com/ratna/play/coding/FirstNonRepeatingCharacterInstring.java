@@ -3,6 +3,7 @@ package com.ratna.play.coding;
 import java.util.LinkedHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FirstNonRepeatingCharacterInstring {
 
@@ -10,12 +11,14 @@ public class FirstNonRepeatingCharacterInstring {
 
 		String input = "Ratna Srinivasa rao  Karicherla is a king";
 
-		Character character = input.chars()
-				.mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s))) //getting value of character
-				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) // converting to map
-				.entrySet().stream().filter(entry -> entry.getValue() == 1l).map(entry -> entry.getKey()).findFirst()
-				.get();
-		System.out.println(character);
+		Stream<Character> mapToObj = input.chars().mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)));
+
+		LinkedHashMap<Character, Long> collect = mapToObj
+				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));
+
+		Character character2 = collect.entrySet().stream().filter(e -> e.getValue() == 1l).map(entry -> entry.getKey())
+				.findFirst().get();
+		System.out.println(character2);
 
 	}
 

@@ -1,7 +1,7 @@
 package com.ratna.play.coding.threads;
 
 public class MemoryConsistencyErrorExample {
-	private static volatile boolean sayHello = false;
+	private static  boolean sayHello = false;
 
 	public static void main(String[] args) throws InterruptedException {
 		Thread thread = new Thread(() -> {
