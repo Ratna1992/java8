@@ -1,4 +1,4 @@
-package com.ratna.play.designpatterns;
+package com.ratna.play.designpatterns.singleton;
 
 import java.io.Serializable;
 

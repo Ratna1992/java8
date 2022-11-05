@@ -1,4 +1,4 @@
-package com.ratna.play.designpatterns;
+package com.ratna.play.designpatterns.prototype;
 
 import java.util.ArrayList;
 import java.util.List;

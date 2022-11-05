@@ -1,4 +1,4 @@
-package com.ratna.play.designpatterns;
+package com.ratna.play.designpatterns.factory;
 
 //factory design pattern
 public class SmsNotificationFactory implements NotificationFactory {

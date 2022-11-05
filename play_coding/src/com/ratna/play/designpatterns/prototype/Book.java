@@ -1,4 +1,4 @@
-package com.ratna.play.designpatterns;
+package com.ratna.play.designpatterns.prototype;
 
 //prototype design pattern
 public class Book {

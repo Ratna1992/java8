@@ -1,4 +1,4 @@
-package com.ratna.play.designpatterns;
+package com.ratna.play.designpatterns.prototype;
 
 public class BookProtoTypeRunner {
 
