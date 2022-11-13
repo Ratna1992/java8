@@ -1,4 +1,4 @@
-package com.ratna.play.misc;
+package com.ratna.play.object;
 
 public class EqualsAndDoubleEqualOperator {
 
