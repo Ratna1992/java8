@@ -1,9 +1,9 @@
 package com.ratna.play.immutableobjects;
 
-//final class
+//public final class
 public final class ImmutableExample {
 
-	// final variable
+	//private  final variable
 	private final String rollNo;
 
 	// mutable object
