@@ -10,15 +10,20 @@ public class UniqueCharactersOfString {
 		System.out.println(UniqueCharactersOfString.checkUniqueCharacters("Ratna"));
 		System.out.println(UniqueCharactersOfString.checkUniqueCharacters("Ravi"));
 
-		String str = "Rat";
+		uniqueCharactersJava8();
+
+	}
+
+	private static void uniqueCharactersJava8() {
+		String str = "Ratna";
 		Set<Character> hasSet = new HashSet<>();
 		Optional<Character> findFirst = str.chars().mapToObj(c -> (char) c).filter(x -> !(hasSet.add(x))).findFirst();
 		if (findFirst.isPresent()) {
+			System.out.println(findFirst.get());
 			System.out.println("duplicate string");
 		} else {
 			System.out.println("unique string");
 		}
-
 	}
 
 	public static boolean checkUniqueCharacters(String str) {
