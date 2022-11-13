@@ -19,9 +19,12 @@ public class SortPrimitiveArrayInJava8 {
 
 		// 2nd approach
 		Arrays.stream(arr).boxed().sorted(Collections.reverseOrder()).forEach(System.out::println);
-		
+
 		int intArr[] = { 9, 8, 7, 1, 2, 3, 22 };
-		List<Integer> collect =(ArrayList<Integer>) Arrays.stream(intArr).boxed().collect(Collectors.toList());
+		List<Integer> collect = (ArrayList<Integer>) Arrays.stream(intArr).boxed().sorted()
+				.collect(Collectors.toList());
+
+		System.out.println(collect);
 
 	}
 
