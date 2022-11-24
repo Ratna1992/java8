@@ -1,6 +1,6 @@
 package com.ratna.play.coding.inheritence;
 
-public class Runner {
+public class SingleInheritenceRunner {
 
 	public static void main(String[] args) {
 		Dog d = new Dog();
