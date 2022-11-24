@@ -24,7 +24,7 @@ public class CompileTimePolymorphism {
 		return a + b + c;
 	}
 
-	// method overloading by return type not possible
+	// method overloading by return type not possible because of ambiguity
 
 	/*
 	 * public double add(int a, int b) { return a + b; }
