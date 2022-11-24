@@ -11,7 +11,6 @@ public class EqualsAndDoubleEqualOperator {
 
 	private static void showDifference() {
 		String name1 = "ratna";
-		// String name2 = "ratna";
 		String name2 = new String("ratna");
 
 		// == checks if the reference to string objects are equal or not. Here, name1
@@ -29,7 +28,7 @@ public class EqualsAndDoubleEqualOperator {
 		String name1 = name2;
 
 		// == checks if the reference to string objects are equal or not. Here, name1
-		// and name2 are two different references. Hence, it returns false.
+		// and name2 are same references. Hence, it returns true.
 		System.out.println(name1 == name2);
 
 		// equals() checks if the content of the string object are equal. Here, the
