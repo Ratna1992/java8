@@ -3,7 +3,7 @@ package com.ratna.play.immutableobjects;
 //public final class
 public final class ImmutableExample {
 
-	//private  final variable
+	// private final variable
 	private final String rollNo;
 
 	// mutable object
@@ -18,7 +18,8 @@ public final class ImmutableExample {
 		return clone;
 	}
 
-	// only create a getter method.
+//no setter method.
+	// only create a getter method for all properties
 	public String getRollNo() {
 		return rollNo;
 	}
