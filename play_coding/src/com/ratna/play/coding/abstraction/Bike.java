@@ -1,4 +1,4 @@
-package com.ratna.play.abstraction;
+package com.ratna.play.coding.abstraction;
 
 public abstract class Bike {
 
