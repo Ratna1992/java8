@@ -1,5 +1,7 @@
 package com.ratna.play.methodreference;
 
+
+
 import java.util.function.Function;
 
 public class MethodReferenceExample {
@@ -15,8 +17,9 @@ public class MethodReferenceExample {
 		System.out.println(func1.apply("ratna"));
 
 		// method reference to constructor
-		Function<String, String> func2 = String::new;
-		System.out.println(func2.apply("23"));
+		Greetings greetings = GreetingsImpl::new;
+		greetings.msg("Hello");
+
 	}
 
 }
